@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+        
+    @media only screen and (max-width: 600px) {
+        body {
+          background-image: url(virat.jpg);
+          background-repeat: no-repeat;
+          color: white;
+          
+          background-position: -140px -300px;
+        }
+
+        .container{
+            text-align: center;
+            border: 1px solid black;
+            width: 70%;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 325px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.274);
+
+        
+
+        }
+
+        .btn{
+            padding: 10px;
+            background-color: rgb(230, 230, 15);
+            border-radius: 20px;
+
+        }
+
+
+
+
+
+      }
+    
+
+
+</style>
+<body>
+
+   <div class="container">
+        <h1>Welcome da Venna</h1><br>
+        <p>kila irukira button na click pannu oru magic nadakum paru</p> <br>
+        
+        <button class="btn"  onclick="myfunction()">Click here</button><br><br>
+        <p id="demo"></p><br>
+        
+
+    </div>
+    <script>
+        //alert("vanakkam da mapulla")
+        function myfunction(){
+            document.getElementById("demo").innerHTML = "Ada lusu na oru alunu na link annupuna poi click panniruviya"+" "+
+            "konjamathu unnaku arivu vendam mental😂😂😂";
+        }
+    </script>
+
+    
+</body>
+</html>
