@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media  (max-width: 480px){
+
+   .top-image{
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    left: 8px;
+    top: 7px;
+    width: 92%;
+    height: auto;
+
+    
+    
+    z-index: -2;
+   }
+
+  .uname{
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: -40px;
+    
+
+
+   }
+   .content{
+    border: 0px solid black;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    text-align: justify;
+    width: 85%;
+
+   }
+
+   .welcome{
+    display: block;
+    position: relative;
+    left: 20px;
+    top: -130px;
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    z-index: -1;
+
+    
+    
+   }
+
+   .fname{
+    position: relative;
+    display: flex;
+    
+    font-size: 20px;
+    left: 55px;
+    top: -90px;
+   }
+
+   .input-name{
+    border: 1px solid black;
+    border-radius: 5px;  
+    position: relative;
+    width: 70%;
+    height: 40px;
+    top: -85px;
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    display: block;
+    
+
+   }
+
+   .contin{
+    position: relative;
+    padding: 10px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    top: -10px;
+    background-color: rgb(34, 181, 255);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 17px;
+    
+
+   }
+
+   .lets{
+    text-decoration: none;
+    border: 0px solid black;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 10px;
+    background-color: rgb(255, 66, 66);
+    color: aliceblue;
+    
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    position: relative;
+    top: 25px;
+   }
+
+   .Drugs{
+        
+    display: block;
+    padding: 5px;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(0, 0, 255);
+    color: aliceblue;
+    height: 50px;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    
+    top: -30px;
+   }
+
+   .q{
+    display: flex;
+    position: relative;
+    top: -50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    
+   }
+   .co{
+    position: relative;
+    top: 50px;
+
+   }
+   
+
+    
+}
+

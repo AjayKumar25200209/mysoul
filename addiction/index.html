@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="angular.min.js"></script>
+<script src="myApp.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addicare</title>
+    <link rel="stylesheet" href="mystyle.css">
+    
+    
+</head>
+<style>
+    
+</style>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div>
+        
+        <img src="cute1.jpg" class="top-image" width="2134px"  height="1200px" alt="">
+        <h1 class="welcome">
+            Addicare<br>Welcomes<br>You
+        </h1>
+        <label class="fname">Name</label> 
+        <input type="text" id="kname" ng-model="myname" class="input-name"  placeholder="Enter your name">
+        <p class="q">Enter what type of addiction do you have? <br>     then Click Continue</p>
+        <select name="Drugs" id="drugs" class="Drugs" name="drugs"   ng-model="Drugs1"  >
+            <option value="">Drugs</option>
+            <option value="drinking">Drinking</option>
+            <option value="Smoking">Smoking</option>
+            <option value="coolip">Coolip</option>
+        </select>
+        <button ng-click="first()" class="contin"> Continue</button>
+        <div class="co">
+        <h1 class="uname" >{{uname}}</h1>
+        <p class="content" style="font-size: 18px;">{{content}}</p>
+        </div>
+
+        
+        
+        
+
+        <a href= "{{go}} "  ng-init="visit='none'"   style="display:{{visit}}" class="lets">lets Start</a>
+        
+    </div>
+    
+</body>
+</html>
