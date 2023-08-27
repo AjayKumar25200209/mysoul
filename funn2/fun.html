@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun</title>
+</head>
+
+<style>
+    @media  only screen and (max-width:600px) {
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .container{
+            
+            border: 2px solid rgb(167, 0, 0);
+            
+            width: auto;
+            background-color: rgb(27, 24, 24);
+            position: relative;
+            max-width: 75%;
+            margin: auto;
+            top: 150px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            
+        }
+        h2 {
+            
+            margin-top: 10px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        p{
+            
+            margin-top: 0px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        
+
+       
+        
+        .ddte{
+
+
+            position: relative;
+            top: 20px;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: larger;
+            background-color: #f8bbd0;
+
+        }
+
+        .namee{
+            
+           
+            margin-top: 20px;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: medium;
+            background-color: #f8bbd0;
+
+        }
+
+        .btn{
+            
+           margin-top: 50px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            background-color: aqua;
+            font-size: medium;
+        }
+
+
+        #result{
+            margin-bottom: 10px;
+            margin-top: 20px;
+            top: 0px;
+            text-align: center;
+            text-align: justify;
+            width:90%;
+            font-weight: normal;
+
+        }
+
+       
+        
+
+
+        
+    }
+
+</style>
+<body>
+    <div class="container">
+
+        <pre><h2>Welcome to Great <br>Girikalan magic show</h2></pre>
+        <pre> <p style="top: 80px;"> <br>Enter your Name and date of birth  </p></pre>
+        <input type="text" name="" id="nammm" class="namee" placeholder="Name solluda venna">
+
+        
+        <input type="date" class="ddte" id="dateee" >
+        
+        <button onclick="myfun()" class="btn">Ammuku la</button>
+        <h3 id="result" class="hh2"></h3>
+
+
+    </div>
+    
+</body>
+<script>
+
+    
+    function myfun(){
+        namee=document.getElementById("nammm").value
+        today_date = new Date();
+        birth_date = document.getElementById("dateee").value.trim();
+        birth_date1 = new Date(birth_date);
+
+        age = today_date - birth_date1;
+
+        age1 = age/(1000*60*60*24*365)
+        age2 = Math.floor(age1);
+
+        console.log("your age :",age2)
+
+        if (birth_date==="" || namee==="" ){
+            result=document.getElementById("result").innerHTML = "Ammuku na ammukiruviya detail enter pannitu ammuku la " ;
+            
+        }
+                                   // Naresh 
+        else if( namee[0]=== "n" && namee[1]==="a" || namee[0]=== "N" && namee[1]==="A" || namee[0]=== "n" && namee[1]==="a"  || namee[0]=== "n" && namee[1]==="A"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu la ithu varaikum nee single irunthurupa and unnoda 40 vayasu varaikum nee single la tha irupa 40 vayasukapparamum nee single tha irupa 😂😂😂😂 " ;
+        }
+                                    //Ananad
+        else if( namee[0]=== "A" && namee[1]==="n" || namee[0]=== "a" && namee[1]==="N" || namee[0]=== "a" && namee[1]==="n"  || namee[0]=== "A" && namee[1]==="N"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu nee kadaisi varaikum lol pattu longa tha pova unna pidichathu unna vidathu un pinnalayae varum 😂😂😂😂 " ;
+        }
+                                    //Jone
+        else if( namee[0]=== "j" && namee[1]==="o" || namee[0]=== "J" && namee[1]==="O" || namee[0]=== "J" && namee[1]==="o"  || namee[0]=== "j" && namee[1]==="O"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu but nee sikiramae commited aagita don't un love succesfull la marriage aagum but na sabam vida tha saivannnnn 😂😂😂😂 " ;
+        }
+                                    //Shunmugesh
+        else if( namee[0]=== "s" && namee[1]==="h" || namee[0]=== "S" && namee[1]==="H" || namee[0]=== "S" && namee[1]==="h"  || namee[0]=== "s" && namee[1]==="H"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu unnaku oru special kavithai sollata porupu illatha unnaku pombala sokku ethuku so ponnu ponnu nu irukathaaa  😂😂😂😂 " ;
+        }
+                                    //subash
+        else if( namee[0]=== "s" && namee[1]==="u" && namee[2]==="b" || namee[0]=== "S" && namee[1]==="U" && namee[2]==="B" || namee[0]=== "S" && namee[1]==="u" && namee[2]==="b"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu ippavum sari unnaku 60 vayasu aanalum python tha best java la waste 😂😂😂😂 " ;
+        }
+
+                                    //sivaram
+        else if( namee[0]=== "n" && namee[1]==="a" || namee[0]=== "N" && namee[1]==="A" || namee[0]=== "n" && namee[1]==="a"  || namee[0]=== "n" && namee[1]==="A"){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+" varusam aaguthu crt kavala padaatha un alu unnaku tha  😂😂😂😂 " ;
+        }
+
+                                    //sugitha
+        else if( namee[0]=== "s" && namee[1]==="u" && namee[2]==="g" || namee[0]=== "S" && namee[1]==="U" && namee[2]==="G"|| namee[0]=== "S" && namee[1]==="u" && namee[2]==="g"  ){
+            result=document.getElementById("result").innerHTML = "Nee poranthu  "+age2+"  aakuthu irunthalum thugu muunja irukiyae ippadii la na sonna nee illai nu solluva but ennaku nee eppavum thugu munjiitha😂😂😂😂 " ;
+        }
+        
+        else {
+            result=document.getElementById("result").innerHTML = "nee poranthu" +age2+" ithana varusathula ethupannalum vilankirukathu and also innimalum vilangathu 😂😂" ;
+        }
+        console.log(namee[1])
+
+        
+        
+       
+        
+        
+
+    }
+    
+</script>
+</html>
